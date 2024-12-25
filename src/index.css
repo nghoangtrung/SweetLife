@@ -1,0 +1,124 @@
+:root{
+  --text-color: black;
+  --background-color: #FFF9F1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+:root {
+  font-family: 'poppins';
+}
+
+.app.brown {
+  --primary-color: #543310;
+  --secondary-color: #AF8F6F;
+  --hover-color: #39230b;
+  --action-color: #39230b;
+}
+
+.app.blue {
+  --primary-color: #001C49;
+  --secondary-color: #E2F6FA;
+  --hover-color: #00122f;
+  --action-color: #00122f;
+}
+
+.app.green {
+  --primary-color: #1F4529;
+  --secondary-color: #729964;
+  --hover-color: #142c1a;
+  --action-color: #142c1a;
+}
+
+.app.pink {
+  --primary-color: #F493C9;
+  --secondary-color: #FFEEF3;
+  --hover-color: #ed6fb4;
+  --action-color: #ed6fb4;
+}
+
+a {
+  color: #000000;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Overlock", sans-serif;
+}
+
+h1 {
+  font-size: 7rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+.inputfield-error {
+  color: red;
+}
+
+@media (max-width: 319px) {
+  * {
+    font-size: 4px;
+  }
+}
+
+/* Small Mobile (481px - 767px) */
+@media (min-width: 320px) and (max-width: 480px) {
+  * {
+    font-size: 4px;
+  }
+}
+
+/* Mobile (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  * {
+    font-size: 6px;
+  }
+}
+
+/* Tablets (768px - 1280px) */
+@media (min-width: 768px) and (max-width: 1280px) {
+  * {
+    font-size: 8px;
+  }
+}
+
+/* Small Laptops (1281px - 1440px) */
+@media (min-width: 1281px) and (max-width: 1440px) {
+  * {
+    font-size: 10px;
+  }
+}
+
+/* Desktops (1441px - 1920px) */
+@media (min-width: 1441px) and (max-width: 1920px) {
+  * {
+    font-size: 12px;
+  }
+}
+
+/* Large Desktops (1921px and above) */
+@media (min-width: 1921px) {
+  * {
+    font-size: 20px;
+  }
+}

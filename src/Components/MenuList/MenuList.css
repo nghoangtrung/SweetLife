@@ -1,0 +1,23 @@
+.menulist {
+  display: flex;
+  align-items: center;
+}
+
+.menulist ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.menulist ul li {
+  font-size: 1.7rem;
+}
+
+.menulist ul li::marker {
+  color: var(--primary-color);
+}
+
+.menulist ul li:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
+}

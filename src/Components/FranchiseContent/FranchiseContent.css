@@ -1,0 +1,19 @@
+.franchisecontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  width: 50%;
+  padding: 3rem;
+  margin: 0 auto;
+}
+
+.franchise-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.franchise-title h2 {
+  color: var(--primary-color);
+}

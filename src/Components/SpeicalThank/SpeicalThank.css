@@ -1,0 +1,28 @@
+.specialthank {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 6rem 10rem;
+  padding-top: 4rem;
+}
+
+.specialthank h2 {
+  color: var(--primary-color);
+}
+
+.specialthank .specialthank-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.specialthank .specialthank-images img {
+  width: 30%;
+  max-width: 30%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+}

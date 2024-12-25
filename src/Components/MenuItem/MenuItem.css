@@ -1,0 +1,85 @@
+.menuitem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid rgb(237, 237, 237);
+  border-radius: 1.5rem;
+  padding: 1rem 2rem;
+  transition: box-shadow 1s;
+}
+
+.menuitem:hover {
+  box-shadow: 5px 7px 9px 1px rgba(171, 171, 171, 0.78);
+  -webkit-box-shadow: 5px 7px 9px 1px rgba(171, 171, 171, 0.78);
+  -moz-box-shadow: 5px 7px 9px 1px rgba(171, 171, 171, 0.78);
+}
+
+.menuitem a {
+  flex: 0.8;
+  overflow: hidden;
+}
+
+.menuitem img {
+  aspect-ratio: 1/1;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  transition: all 1s;
+}
+
+.menuitem:hover img {
+  transform: scale(1.1);
+}
+
+.menuitem-content {
+  flex: 0.2;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.menuitem-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.menuitem-text .item-price {
+  font-size: 1.5rem;
+}
+
+.menuitem p {
+  font-family: "Overlock";
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+
+.menuitem-content .menuitem-btn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-color);
+  outline: none;
+  border: none;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+.menuitem-content .menuitem-btn button:hover {
+  background: var(--hover-color);
+}
+
+.menuitem-content .menuitem-btn button:active {
+  background: var(--action-color);
+}
+
+.menuitem-content .menuitem-btn i {
+  color: white;
+  font-size: 2rem;
+}

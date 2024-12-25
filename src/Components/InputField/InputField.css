@@ -1,0 +1,38 @@
+.inputfield {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+}
+
+.inputfield label {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-top: 0.7rem;
+}
+
+.inputfield input {
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 4rem;
+  border: 1px solid grey;
+  padding: 0.7rem 1rem;
+}
+
+.form .inputfield input {
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 4rem;
+  border: 1px solid transparent;
+  padding: 0.5rem 1rem;
+}
+
+.inputfield-error {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.inputfield .inputfield-check {
+  color: red;
+}

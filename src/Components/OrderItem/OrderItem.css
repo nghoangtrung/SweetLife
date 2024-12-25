@@ -1,0 +1,78 @@
+.orderitem {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: white;
+}
+
+.orderitem-item {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  gap: 1rem;
+  box-shadow: 5px 7px 9px 1px rgba(171, 171, 171, 0.78);
+  -webkit-box-shadow: 5px 7px 9px 1px rgba(171, 171, 171, 0.78);
+  -moz-box-shadow: 5px 7px 9px 1px rgba(171, 171, 171, 0.78);
+}
+
+.orderitem-item-image {
+  flex: 0.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  max-width: 25%;
+  aspect-ratio: 1/1;
+}
+
+.orderitem-item img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+.cart-item-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+
+.cart-item-text h4 {
+  font-size: 2.3rem;
+}
+
+.orderitem-item-quantity {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.orderitem-item-quantity p {
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  width: 4rem;
+  height: 2.5rem;
+}
+
+.orderitem-item-quantity i {
+  cursor: pointer;
+}
+
+.orderitem-item .orderitem-item-remove {
+  flex: 0.1;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.orderitem-item .orderitem-item-remove i {
+  font-size: 1.5rem;
+  cursor: pointer;
+}

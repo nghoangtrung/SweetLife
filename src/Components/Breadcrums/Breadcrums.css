@@ -1,0 +1,16 @@
+.breadcrum p,
+strong {
+  font-size: 1.5rem;
+}
+
+.breadcrum:hover p {
+  font-size: 1.5rem;
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+.breadcrum:hover p strong {
+  font-size: 1.5rem;
+  text-decoration: underline;
+  color: var(--primary-color);
+}

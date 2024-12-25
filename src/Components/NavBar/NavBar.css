@@ -1,0 +1,160 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8.3rem;
+  padding: 0 2rem;
+  background: var(--background-color);
+  position: relative;
+  z-index: 1;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  width: 10%;
+}
+
+.nav-logo img {
+  width: 100%;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 50px;
+  height: 100%;
+}
+
+.nav-menu a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  gap: 3px;
+  height: 8.3rem;
+  color: grey;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 0.3rem 1rem;
+  border-radius: 0.6rem;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-menu .active {
+  color: #000000;
+}
+
+.nav-menu a:hover {
+  color: #000000;
+  border-radius: 0.6rem;
+}
+
+.nav-menu a hr {
+  position: absolute;
+  bottom: 0;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 2px;
+  width: 0%;
+  z-index: 1;
+  transition: border 0.5s ease, width 0.5s ease;
+}
+
+.nav-menu a.active hr {
+  border: 1px solid rgb(0, 0, 0);
+  width: 100%;
+}
+
+.nav-menu a:hover hr {
+  border: 1px solid rgb(0, 0, 0);
+  width: 100%;
+}
+
+.nav-login-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-login-cart .nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  cursor: pointer;
+  background: var(--background-color);
+}
+
+.nav-login-cart .nav-container:hover {
+  background: black;
+}
+
+.nav-login-cart .nav-container:hover i {
+  color: var(--background-color);
+}
+
+.nav-login-cart i {
+  color: black;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav-login-cart .nav-check {
+  display: none;
+}
+
+.nav-cart {
+  position: relative;
+}
+
+.nav-cart p {
+  width: 1.3rem;
+  height: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  font-size: 14px;
+  background: red;
+  color: white;
+  top: 0.5rem;
+  right: 0.5rem;
+  position: absolute;
+}
+
+.nav-cart i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  top: 1.3rem;
+  right: 1rem;
+  position: absolute;
+}
+
+.navbar hr {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 2px;
+  width: 97%;
+  transform: translateX(-50%);
+}
+
+/* Small Mobile - Mobile - Tablets (768px - 1280px) */
+@media (min-width: 320px) and (max-width: 1280px) {
+  .nav-menu {
+    display: none;
+  }
+  .nav-login-cart .nav-check {
+    display: flex;
+  }
+}

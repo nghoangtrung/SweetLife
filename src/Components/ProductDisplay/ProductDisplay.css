@@ -1,0 +1,77 @@
+.product-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.product-display-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-display-left img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.product-display-right {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.product-display-right .product-display-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.product-display-right .product-display-detail h4 {
+  font-family: "poppins";
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.product-display-right button {
+  font-family: "Overlock";
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  background: var(--primary-color);
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  width: 23rem;
+  height: 5.5rem;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+
+.product-display-right button:hover {
+  background: var(--hover-color);
+}
+
+.product-display-right button:active {
+  background: var(--hover-color);
+}
+
+/* Small Mobile - Mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+  .product-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+  }
+}

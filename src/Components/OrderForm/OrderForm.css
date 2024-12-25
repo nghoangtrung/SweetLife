@@ -1,0 +1,13 @@
+.orderform {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* .orderform-form div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+} */
+

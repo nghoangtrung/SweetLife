@@ -1,0 +1,16 @@
+.franchise {
+  background: var(--background-color);
+  padding: 3rem 0;
+}
+
+/* Small Mobile (481px - 767px) */
+@media (min-width: 320px) and (max-width: 480px) {
+  .action-banner .action-banner-item img {
+    width: 100%;
+    max-width: 50%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+  }
+}
+
